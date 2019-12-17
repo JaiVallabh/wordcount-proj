@@ -1,0 +1,10 @@
+<h1>Count of words is {{count}}</h1>
+<br>
+<a href="{% url 'home' %}">start</a>
+<br>
+<h1>Text is:</h1>
+{{txt}}
+{% for word,ct in dict  %}
+{{word}}
+{{ct}}
+{% endfor %}
